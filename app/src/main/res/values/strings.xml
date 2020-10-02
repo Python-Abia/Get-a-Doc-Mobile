@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GetADocApp</string>
+
+    <!--SignIn screen strings !-->
+    <string name="splash">Get A Doc</string>
+    <string name="footer">Redefining medicare</string>
+    <string name="login">Username</string>
+    <string name="pwd">Password</string>
+    <string name="type">Select Account Type </string>
+    <string name="noAccount">Don\'t have an account?</string>
+    <string name="forgotPwd">Forgot password?</string>
+    <string name="get">e-Medics</string>
+    <string name="fb">Sign in with facebook</string>
+    <string name="gmail">Sign in with Gmail</string>
+    <string name="signin">Sign in</string>
+
+    <!--Registration Dialog screen strings !-->
+    <string name="fields">Kindly complete all fields</string>
+    <string name="reg">New User Account</string>
+    <string name="userType">Select user type</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#314EF3"
+    tools:context=".loginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/apple_touch_icon"/>
+
+
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+            android:textColor="#fff"
+            android:layout_gravity="start"
+        android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/loginID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="10dp"
+            android:background="@drawable/cedittext"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pwd"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:background="@drawable/cedittext"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:onClick="authenticate"
+            android:textColor="#fff"
+            android:background="@drawable/colored_edit_text"
+            android:text="@string/signin"
+            android:textAllCaps="false" />
+
+        <!--SignIn with facebook and Gmail segments -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:gravity="right"
+        android:textSize="16sp"
+        android:onClick="newUserAccount"
+        android:text="@string/noAccount"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:gravity="right"
+        android:textColor="#fff"
+        android:onClick="forgotPassword"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:text="@string/forgotPwd"/>
+
+</LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
