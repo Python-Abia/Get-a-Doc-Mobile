@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.text.TextUtils;
@@ -64,5 +67,19 @@ Vibrator v;
 
     public void allContacts(MenuItem item) {
         Toast.makeText(this, "Volley Contacts", Toast.LENGTH_SHORT).show();
+    }
+
+    public void logoutUser(MenuItem item) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Logging out Information");
+        builder.setMessage("Do you wants to Logout?");
+        builder.setNegativeButton("No",null);
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                startActivity(new Intent(UserDashBoardActivity.this, loginActivity.class));
+            }
+        });builder.create();
+        builder.show();
     }
 }
