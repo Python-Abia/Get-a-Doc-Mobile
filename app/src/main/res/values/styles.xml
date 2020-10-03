@@ -5,6 +5,10 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationStyle</item>
+    </style>
+    <style name="WindowAnimationStyle">
+        <item name="android:windowEnterAnimation">@android:anim/linear_interpolator</item>
     </style>
 
 </resources>
