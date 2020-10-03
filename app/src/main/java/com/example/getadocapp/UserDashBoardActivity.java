@@ -82,4 +82,8 @@ Vibrator v;
         });builder.create();
         builder.show();
     }
+
+    public void findHelp(MenuItem item) {
+        Toast.makeText(this, "Help dialog to show", Toast.LENGTH_SHORT).show();
+    }
 }
