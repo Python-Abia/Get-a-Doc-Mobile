@@ -26,18 +26,18 @@
 
                 <item
                     android:title="Logout"
-                    android:id="logout"
+
                     android:icon="@drawable/ic_exit"
                     android:onClick="logoutUser"/>
 
                 <item
                     android:title="Help"
-                    android:id="help"
+
                     android:icon="@drawable/ic_help"
                     android:onClick="findHelp"/>
 
             </group>
         </menu>
-    </item android:title="#">
+    </item>
 
 </menu>
