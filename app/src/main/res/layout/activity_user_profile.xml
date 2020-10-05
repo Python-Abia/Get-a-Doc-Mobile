@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#314EF3"
+    android:padding="10dp"
+    tools:context=".UserProfileActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_back"
+           android:onClick="moveBack"/>
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_edit"
+           android:layout_alignParentRight="true"
+           android:onClick="editUser"/>
+   </RelativeLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="5dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp">
+
+              <de.hdodenhof.circleimageview.CircleImageView
+                  android:id="@+id/profile_pic"
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
+                  android:src="@drawable/team_one"/>
+
+              <TextView
+                  android:id="@+id/tv_fullName"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/profile_pic"
+                  android:text="Full name of User"
+                  android:textColor="#fff"
+                  android:layout_marginLeft="10dp"
+                  android:textSize="16sp"
+                  android:textStyle="bold"/>
+
+              <TextView
+                  android:id="@+id/tv_profession"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/profile_pic"
+                  android:layout_below="@id/tv_fullName"
+                  android:text="Profession Type"
+                  android:textColor="#fff"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="10dp"
+                  android:textSize="16sp"
+                  android:textStyle="bold"/>
+
+              <TextView
+                  android:id="@+id/tv_followers"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/profile_pic"
+                  android:layout_below="@id/tv_profession"
+                  android:text="1 follower"
+                  android:textColor="#fff"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="10dp"
+                  android:textSize="14sp"
+                  android:textStyle="bold"/>
+
+              <TextView
+                  android:id="@+id/tv_following"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/profile_pic"
+                  android:layout_below="@id/tv_followers"
+                  android:text="1 following"
+                  android:textColor="#fff"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="10dp"
+                  android:textSize="14sp"
+                  android:textStyle="bold"/>
+
+          </RelativeLayout>
+
+          <view
+              android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="#fff"
+              android:layout_marginBottom="10dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="About"
+              android:textSize="14sp"
+              android:textColor="#fff"/>
+          <TextView
+              android:id="@+id/tv_about"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="About information of this user"
+              android:textSize="16sp"
+              android:textColor="#fff"/>
+
+          <TextView
+              android:layout_marginTop="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Endorsements"
+              android:textSize="14sp"
+              android:textColor="#fff"/>
+          <TextView
+              android:id="@+id/tv_endorse"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Endorsements about this user"
+              android:textSize="16sp"
+              android:textColor="#fff"/>
+
+          <TextView
+              android:layout_marginTop="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Experience"
+              android:textSize="14sp"
+              android:textColor="#fff"/>
+          <TextView
+              android:id="@+id/tv_e"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Experiences of this user, most suitably for practitioners"
+              android:textSize="16sp"
+              android:textColor="#fff"/>
+
+          <TextView
+              android:layout_marginTop="15dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Contact"
+              android:textSize="14sp"
+              android:textColor="#fff"/>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:id="@+id/icon"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:layout_margin="10dp"
+                  android:src="@drawable/apple_touch_icon"/>
+              <TextView
+                  android:id="@+id/tv_profile_link_tag"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/icon"
+                  android:layout_marginLeft="10dp"
+                  android:text="Your Profile"
+                  android:textStyle="bold"
+                  android:textSize="16sp"
+                  android:textColor="#fff"/>
+              <TextView
+                  android:id="@+id/tv_profile_link"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/icon"
+                  android:layout_marginLeft="10dp"
+                  android:layout_below="@id/tv_profile_link_tag"
+                  android:text="Profile link of this user"
+                  android:textSize="14sp"
+                  android:textColor="#fff"/>
+              <view
+                  android:layout_width="match_parent"
+                  android:layout_height="2dp"
+                  android:background="#fff"
+                  android:layout_marginLeft="57dp"
+                  android:layout_below="@id/tv_profile_link"/>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp">
+              <ImageView
+                  android:id="@+id/phone_icon"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:layout_margin="10dp"
+                  android:src="@drawable/ic_phone"/>
+              <TextView
+                  android:id="@+id/tv_phone_tag"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/phone_icon"
+                  android:layout_marginLeft="10dp"
+                  android:text="Phone"
+                  android:textStyle="bold"
+                  android:textSize="16sp"
+                  android:textColor="#fff"/>
+              <TextView
+                  android:id="@+id/tv_phone_no"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/phone_icon"
+                  android:layout_marginLeft="10dp"
+                  android:layout_below="@id/tv_phone_tag"
+                  android:text="Profile link of this user"
+                  android:textSize="14sp"
+                  android:textColor="#fff"/>
+              <view
+                  android:layout_width="match_parent"
+                  android:layout_height="2dp"
+                  android:background="#fff"
+                  android:layout_marginLeft="57dp"
+                  android:layout_below="@id/tv_phone_no"/>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp">
+              <ImageView
+                  android:id="@+id/msg_icon"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:layout_margin="10dp"
+                  android:src="@drawable/ic_mail"/>
+              <TextView
+                  android:id="@+id/tv_msg_tag"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/msg_icon"
+                  android:layout_marginLeft="10dp"
+                  android:text="Email"
+                  android:textStyle="bold"
+                  android:textSize="16sp"
+                  android:textColor="#fff"/>
+              <TextView
+                  android:id="@+id/tv_email"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/msg_icon"
+                  android:layout_marginLeft="10dp"
+                  android:layout_below="@id/tv_msg_tag"
+                  android:text="Profile link of this user"
+                  android:textSize="14sp"
+                  android:textColor="#fff"/>
+              <view
+                  android:layout_width="match_parent"
+                  android:layout_height="2dp"
+                  android:background="#fff"
+                  android:layout_marginLeft="57dp"
+                  android:layout_below="@id/tv_email"/>
+          </RelativeLayout>
+
+      </LinearLayout>
+  </ScrollView>
+</LinearLayout>

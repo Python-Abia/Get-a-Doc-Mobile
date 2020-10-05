@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.text.TextUtils;
@@ -13,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -64,5 +68,37 @@ Vibrator v;
 
     public void allContacts(MenuItem item) {
         Toast.makeText(this, "Volley Contacts", Toast.LENGTH_SHORT).show();
+    }
+
+    public void logoutUser(MenuItem item) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Logging out Information");
+        builder.setMessage("Do you wants to Logout?");
+        builder.setNegativeButton("No",null);
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                startActivity(new Intent(UserDashBoardActivity.this, loginActivity.class));
+            }
+        });builder.create();
+        builder.show();
+    }
+
+    public void findHelp(MenuItem item) {
+        Toast.makeText(this, "Help dialog to show", Toast.LENGTH_SHORT).show();
+    }
+
+    public void viewProfile(View view) {
+       AlertDialog.Builder builder = new AlertDialog.Builder(this);
+       builder.setTitle("Information");
+       builder.setMessage("Go to user profile?");
+       builder.setNegativeButton("No",null);
+       builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+           @Override
+           public void onClick(DialogInterface dialogInterface, int i) {
+            startActivity(new Intent(UserDashBoardActivity.this, UserProfileActivity.class));
+           }
+       }); builder.create();
+       builder.show();
     }
 }
