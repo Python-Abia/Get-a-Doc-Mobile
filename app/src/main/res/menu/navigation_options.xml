@@ -20,24 +20,20 @@
         </menu>
     </item>
 
-    <item android:title="#">
-        <menu>
-            <group android:checkableBehavior="none">
 
-                <item
-                    android:title="Logout"
+    <item
+        android:title="Logout"
+        android:id="logout"
+        android:icon="@drawable/ic_exit"
+        android:onClick="logoutUser"/>
 
-                    android:icon="@drawable/ic_exit"
-                    android:onClick="logoutUser"/>
+    <item
+        android:title="Help"
+        android:id="help"
+        android:icon="@drawable/ic_help"
+        android:onClick="findHelp"/>
 
-                <item
-                    android:title="Help"
+      
 
-                    android:icon="@drawable/ic_help"
-                    android:onClick="findHelp"/>
-
-            </group>
-        </menu>
-    </item>
 
 </menu>

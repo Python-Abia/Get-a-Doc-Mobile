@@ -66,6 +66,8 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/button_bg"
             android:onClick="authenticate"
+            android:textColor="#fff"
+            android:background="@drawable/colored_edit_white"
             android:padding="10dp"
             android:text="@string/signin"
             android:textAllCaps="false"
