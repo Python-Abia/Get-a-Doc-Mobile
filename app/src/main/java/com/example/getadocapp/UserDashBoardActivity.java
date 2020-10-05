@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -85,5 +86,19 @@ Vibrator v;
 
     public void findHelp(MenuItem item) {
         Toast.makeText(this, "Help dialog to show", Toast.LENGTH_SHORT).show();
+    }
+
+    public void viewProfile(View view) {
+       AlertDialog.Builder builder = new AlertDialog.Builder(this);
+       builder.setTitle("Information");
+       builder.setMessage("Go to user profile?");
+       builder.setNegativeButton("No",null);
+       builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+           @Override
+           public void onClick(DialogInterface dialogInterface, int i) {
+            startActivity(new Intent(UserDashBoardActivity.this, UserProfileActivity.class));
+           }
+       }); builder.create();
+       builder.show();
     }
 }

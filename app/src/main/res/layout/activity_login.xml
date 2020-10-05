@@ -67,7 +67,7 @@
             android:padding="10dp"
             android:onClick="authenticate"
             android:textColor="#fff"
-            android:background="@drawable/colored_edit_text"
+            android:background="@drawable/colored_edit_white"
             android:text="@string/signin"
             android:textAllCaps="false" />
 
