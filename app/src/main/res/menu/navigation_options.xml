@@ -29,13 +29,13 @@
 
     <item
         android:title="@string/logout"
-        android:id="logout"
+        android:id="@+id/logout"
         android:icon="@drawable/ic_exit"
         android:onClick="logoutUser"/>
 
     <item
         android:title="@string/help"
-        android:id="help"
+        android:id="@+id/help"
         android:icon="@drawable/ic_help"
         android:onClick="findHelp"/>
 
