@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EditUserProfileActivity"></activity>
+        <activity android:name=".UserPostsActivity" />
+        <activity android:name=".EditUserProfileActivity" />
         <activity android:name=".UserProfileActivity" />
         <activity android:name=".ForgetPasswordActivity" />
         <activity android:name=".RegistrationActivity" />
