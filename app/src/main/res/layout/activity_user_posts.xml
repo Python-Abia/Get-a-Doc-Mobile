@@ -15,13 +15,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_back"
-            android:onClick="moveBack"/>
-        <ImageView
+            android:onClick="moveBack"
+            android:id="@+id/back_pic"/>
+
+        <TextView
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_edit"
-            android:layout_alignParentRight="true"
-            android:onClick="editUser"/>
+            android:layout_toRightOf="@id/back_pic"
+            android:text="@string/posts"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
     </RelativeLayout>
 
     <ScrollView
@@ -39,11 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/posts_pic"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ic_posts"/>
+
 
 
 
