@@ -18,4 +18,10 @@
     <string name="fields">Kindly complete all fields</string>
     <string name="reg">New User Account</string>
     <string name="userType">Select user type</string>
+    <string name="messages">Messages</string>
+    <string name="directory">Directory</string>
+    <string name="logout">Logout</string>
+    <string name="help">Help</string>
+    <string name="home">Home</string>
+    <string name="posts">Posts</string>
 </resources>
