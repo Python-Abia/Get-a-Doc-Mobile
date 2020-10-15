@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LandingPage" />
-        <activity android:name=".LandingActivity" />
+
         <activity android:name=".EditUserProfileActivity" />
         <activity android:name=".UserProfileActivity" />
         <activity android:name=".ForgetPasswordActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".UserDashBoardActivity" />
         <activity android:name=".loginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

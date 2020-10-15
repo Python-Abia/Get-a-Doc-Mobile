@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Home">
+    <item android:title="@string/home">
         <menu>
             <group android:checkableBehavior="none">
 
                 <item
-                    android:title="Messages"
+                    android:title="@string/messages"
                     android:icon="@drawable/ic_message"
                     android:onClick="checkMessages"
                     android:id="@+id/msg"/>
 
                 <item
-                    android:title="Directory"
+                    android:title="@string/posts"
+                    android:icon="@drawable/ic_posts"
+                    android:onClick="allPosts"
+                    android:id="@+id/posts"/>
+
+                <item
+                    android:title="@string/directory"
                     android:onClick="allContacts"
                     android:icon="@drawable/ic_people"
                     android:id="@+id/contacts"/>
@@ -32,6 +38,5 @@
         android:id="@+id/help"
         android:icon="@drawable/ic_help"
         android:onClick="findHelp"/>
-
 
 </menu>

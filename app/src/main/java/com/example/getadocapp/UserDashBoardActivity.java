@@ -102,6 +102,10 @@ private TabLayout tabLayout;
         Toast.makeText(this, "Volley Messages", Toast.LENGTH_SHORT).show();
     }
 
+    public void allPosts(MenuItem item) {
+        startActivity(new Intent(UserDashBoardActivity.this,UserPostsActivity.class));
+    }
+
     public void allContacts(MenuItem item) {
         Toast.makeText(this, "Volley Contacts", Toast.LENGTH_SHORT).show();
     }

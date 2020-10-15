@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#314EF3"
+    android:background="@drawable/gradient_background"
     tools:context=".loginActivity">
 
     <RelativeLayout
@@ -34,13 +34,12 @@
 
         <TextView
             android:id="@+id/tvUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_above="@+id/loginID"
-        android:text="@string/login"
+            android:text="@string/login"
             android:textColor="#fff"
-            android:layout_gravity="start"
-        android:textSize="14sp"/>
+            android:textSize="14sp" />
         <EditText
             android:id="@+id/loginID"
             android:layout_width="match_parent"
@@ -48,7 +47,7 @@
             android:layout_above="@+id/tvPassword"
             android:inputType="text"
             android:padding="10dp"
-            android:background="@drawable/cedittext"
+            android:background="#a8edea"
             android:textSize="18sp" />
 
         <TextView
@@ -60,7 +59,7 @@
             android:textColor="#fff"
             android:layout_marginTop="10dp"
             android:layout_gravity="start"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/loginPassword"
@@ -69,7 +68,7 @@
             android:inputType="textPassword"
             android:layout_above="@id/tvForgotPwd"
             android:padding="10dp"
-            android:background="@drawable/cedittext"
+            android:background="#a8edea"
             android:textSize="18sp" />
         <TextView
             android:id="@+id/tvForgotPwd"
@@ -96,8 +95,10 @@
             android:onClick="authenticate"
             android:textColor="#fff"
             android:background="@drawable/colored_edit_white"
+            android:padding="10dp"
             android:text="@string/signin"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvSU"

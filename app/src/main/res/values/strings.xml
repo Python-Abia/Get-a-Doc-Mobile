@@ -20,6 +20,7 @@
     <string name="reg">New User Account</string>
     <string name="userType">Select user type</string>
 
+
     <string name="todo">todo</string>
     <string name="fUser">John Doe</string>
     <string name="pType">Surgeon</string>
@@ -53,5 +54,13 @@
     <string name="notifications">Notifications</string>
 
     <string name="sutext"> Connect with</string>
+
+
+    <string name="messages">Messages</string>
+    <string name="directory">Directory</string>
+    <string name="logout">Logout</string>
+    <string name="help">Help</string>
+    <string name="home">Home</string>
+    <string name="posts">Posts</string>
 
 </resources>
