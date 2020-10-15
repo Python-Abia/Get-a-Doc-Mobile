@@ -19,25 +19,31 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:src="@drawable/ic_back"
-           android:onClick="moveBack"/>
+           android:onClick="moveBack"
+           android:contentDescription="@string/todo" />
 
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="Edit Profile"
+           android:text="@string/edit"
            android:textColor="#fff"
            android:textSize="16sp"
            android:layout_toRightOf="@id/back_img"
-           android:layout_marginLeft="30dp"/>
+           android:layout_marginLeft="30dp"
+           tools:ignore="RelativeOverlap"
+           android:layout_marginStart="30dp"
+           android:layout_toEndOf="@id/back_img" />
 
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_alignParentRight="true"
            android:textSize="16sp"
-           android:text="Save"
+           android:text="@string/save"
            android:textColor="#fff"
-           android:onClick="saveEditing"/>
+           android:onClick="saveEditing"
+           tools:ignore="RelativeOverlap"
+           android:layout_alignParentEnd="true" />
 
    </RelativeLayout>
 
@@ -47,13 +53,13 @@
         android:padding="10dp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Profile photo"
+                android:text="@string/pp"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:textColor="#fff"
@@ -113,7 +119,7 @@
                 android:textColor="#fff"
                 android:textSize="12sp"
                 android:padding="5dp"
-                android:text="Headline*"/>
+                android:text="@string/hl"/>
 
             <EditText
                 android:id="@+id/et_headline"
@@ -132,7 +138,7 @@
                 android:textColor="#fff"
                 android:textSize="12sp"
                 android:padding="5dp"
-                android:text="Experience"/>
+                android:text="@string/exp"/>
 
             <EditText
                 android:id="@+id/et_experience"
@@ -151,7 +157,7 @@
                 android:textColor="#fff"
                 android:textSize="12sp"
                 android:padding="5dp"
-                android:text="Phone"/>
+                android:text="@string/phone"/>
 
             <EditText
                 android:id="@+id/et_phone"
@@ -159,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:textColor="#000"
-                android:inputType="number"
+                android:inputType="phone"
                 android:singleLine="true"
                 android:background="@drawable/cedittext"
                 android:padding="10dp" />
@@ -171,7 +177,7 @@
                 android:textColor="#fff"
                 android:textSize="12sp"
                 android:padding="5dp"
-                android:text="Country/Region*"/>
+                android:text="@string/country"/>
 
             <EditText
                 android:id="@+id/et_country"

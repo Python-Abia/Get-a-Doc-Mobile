@@ -1,42 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemdroidx.constraintlayout.widget.ConstraintLayoutas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/drawerLayout"
     tools:context=".UserDashBoardActivity">
 
-    <include
-        layout="@layout/tablayout"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"/>
-
-    <androidx.drawerlayout.widget.DrawerLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/drawerLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
             android:layout_height="match_parent"
-            android:id="@+id/home_container">
+            android:orientation="vertical">
 
+            <include
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                layout="@layout/dashboard_header"/>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabs"
+        android:background="#314EF3"
+        android:minHeight="?actionBarSize"
+        app:tabTextColor="#fff"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-        </LinearLayout>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/viewPager"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floating_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:onClick="NewPost"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_post_add"/>
+</LinearLayout>
+        
         <com.google.android.material.navigation.NavigationView
-            android:layout_width="match_parent"
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/navView"
-            android:layout_gravity="start"
+            app:headerLayout="@layout/headers"
             app:menu="@menu/navigation_options"
-            app:headerLayout="@layout/headers"/>
+            android:fitsSystemWindows="true"
+            android:layout_gravity="start"/>
     </androidx.drawerlayout.widget.DrawerLayout>
 
 
 
-
-</LinearLayout>

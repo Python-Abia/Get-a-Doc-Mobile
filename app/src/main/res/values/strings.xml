@@ -7,15 +7,51 @@
     <string name="login">Username</string>
     <string name="pwd">Password</string>
     <string name="type">Select Account Type </string>
-    <string name="noAccount">Don\'t have an account?</string>
+    <string name="noAccount">Sign Up?</string>
     <string name="forgotPwd">Forgot password?</string>
     <string name="get">e-Medics</string>
     <string name="fb">Sign in with facebook</string>
-    <string name="gmail">Sign in with Gmail</string>
+
     <string name="signin">Sign in</string>
+
 
     <!--Registration Dialog screen strings !-->
     <string name="fields">Kindly complete all fields</string>
     <string name="reg">New User Account</string>
     <string name="userType">Select user type</string>
+
+    <string name="todo">todo</string>
+    <string name="fUser">John Doe</string>
+    <string name="pType">Surgeon</string>
+    <string name="follow">1 follower</string>
+    <string name="follower">1 following</string>
+    <string name="about">About</string>
+    <string name="abtUser">About information of the user</string>
+    <string name="endorse">Endorsements</string>
+    <string name="endorse1">Endorsements about this user</string>
+
+    <string name="exp">Experience</string>
+    <string name="exp1">Experiences of this user, most suitably for practitioners</string>
+    <string name="contact">Contact</string>
+    <string name="urProfile">Your Profile</string>
+    <string name="profile1">Profile link of this user</string>
+    <string name="phone">Phone</string>
+
+    <string name="profileLink">Profile link of this user</string>
+    <string name="email">Email</string>
+    <string name="refLink">Profile link of this user</string>
+
+    <string name="edit">Edit Profile</string>
+    <string name="save">Save</string>
+    <string name="pp">Profile photo</string>
+    <string name="hl">Headline*</string>
+    <string name="country">Country/Region*</string>
+    <string name="search">search</string>
+
+    <string name="explore">Explore</string>
+    <string name="mail">Messages</string>
+    <string name="notifications">Notifications</string>
+
+    <string name="sutext"> Connect with</string>
+
 </resources>

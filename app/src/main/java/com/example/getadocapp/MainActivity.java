@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-            startActivity(new Intent(MainActivity.this,loginActivity.class));
+            startActivity(new Intent(MainActivity.this,LandingActivity.class));
+            finish();
             }
         }; countDownTimer.start();
     }
