@@ -28,18 +28,15 @@
 
 
     <item
-        android:title="@string/logout"
+        android:title="Logout"
         android:id="@+id/logout"
         android:icon="@drawable/ic_exit"
         android:onClick="logoutUser"/>
 
     <item
-        android:title="@string/help"
+        android:title="Help"
         android:id="@+id/help"
         android:icon="@drawable/ic_help"
         android:onClick="findHelp"/>
-
-      
-
 
 </menu>

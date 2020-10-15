@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#314EF3"
+    tools:context=".LandingActivity">
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/doc" />
+
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSignUp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:onClick="authenticate"
+        android:textColor="#fff"
+        android:background="@drawable/colored_edit_white"
+        android:text="@string/signin"
+        android:textAllCaps="false" />
+
+    <!--SignIn with facebook and Gmail segments -->
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#314EF3"
+        android:background="@drawable/colored_edit_text"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_above="@+id/tvSU"
+        android:layout_margin="10dp"
+        android:onClick="newUserAccount"
+        android:text="@string/noAccount"/>
+
+    <TextView
+        android:id="@+id/tvSU"
+        android:layout_above="@+id/socialsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sutext"
+        android:gravity="center"
+        android:textColor="#fff"/>
+
+    <LinearLayout
+        android:id="@+id/socialsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/facebook"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/google_icon"/>
+    </LinearLayout>
+
+</RelativeLayout>

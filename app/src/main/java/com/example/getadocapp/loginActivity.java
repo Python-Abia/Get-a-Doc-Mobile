@@ -34,7 +34,9 @@ Vibrator v;
     }
 
     public void forgotPassword(View view) {
-        Toast.makeText(this, "forgot password", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this,ForgetPasswordActivity.class));
+        finish();
+        //Toast.makeText(this, "forgot password", Toast.LENGTH_SHORT).show();
     }
 
     public void authenticate(View view) {
@@ -55,11 +57,18 @@ Vibrator v;
         }else {
 
             startActivity(new Intent(loginActivity.this, UserDashBoardActivity.class));
+            finish();
         }
     }
 
 
     public void newUserAccount(View view) {
-     startActivity(new Intent(loginActivity.this,UserDashBoardActivity.class));
+     startActivity(new Intent(loginActivity.this,RegistrationActivity.class));
+     finish();
+    }
+
+    public void cancelDialog(View view) {
+        startActivity(new Intent(this,LandingActivity.class));
+        finish();
     }
 }

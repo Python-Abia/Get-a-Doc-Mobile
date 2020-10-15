@@ -27,12 +27,18 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
+
+            public void onFinish() {
+            startActivity(new Intent(MainActivity.this,LandingActivity.class));
+            finish();
+
             public void onTransitionCompleted(MotionLayout motionLayout, int i) {
                 startActivity(new Intent(MainActivity.this,loginActivity.class));
             }
 
             @Override
             public void onTransitionTrigger(MotionLayout motionLayout, int i, boolean b, float v) {
+
 
             }
         });

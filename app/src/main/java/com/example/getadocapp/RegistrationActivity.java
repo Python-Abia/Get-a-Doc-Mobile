@@ -56,7 +56,7 @@ Spinner regSpinner;
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                startActivity(new Intent(RegistrationActivity.this,loginActivity.class));
+                startActivity(new Intent(RegistrationActivity.this,LandingActivity.class));
             }
         });
         builder.create();
